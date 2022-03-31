@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/destination/background-destination-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Barlow Condensed", sans-serif;
+  color: #ffffff;
+}
+
+header {
+  height: 15vh;
+  margin: 2rem 0rem;
+  width: 95vw;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+div.horizontal-line {
+  position: absolute;
+  width: 420px;
+  height: 1px;
+  left: 130px;
+  top: 8vh;
+  background: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+  z-index: 2;
+}
+
+nav {
+  width: 60%;
+  background-color: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(81.5485px);
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0rem 5rem;
+}
+
+li {
+  height: 70%;
+  padding: 1.5rem 0;
+  list-style: none;
+  border-bottom: 2px solid #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 400;
+  padding-right: 0.2rem;
+}
+
+a > span {
+  font-weight: 900;
+  padding-right: 1rem;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 75vw;
+  height: 60vh;
+  margin: 0 auto;
+}
+
+section {
+  width: 350px;
+}
+
+section > h2 {
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+section > h1 {
+  font-size: 7rem;
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+}
+
+section > p {
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+aside .round {
+  width: 274px;
+  height: 274px;
+  background: #ffffff;
+  border-radius: 50%;
+  position: relative;
+}
+
+.round p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #000000;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+}
