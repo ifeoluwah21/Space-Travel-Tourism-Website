@@ -5,10 +5,6 @@
 }
 
 body {
-  /*
-  width: 100%;
-  height: 100%;
-*/
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Barlow Condensed", sans-serif;
@@ -59,9 +55,11 @@ nav.nav-all > ul.all {
 }
 
 nav.nav-all > ul.all > li {
-  height: 70%;
-  padding: 1.5rem 0;
   list-style: none;
+  border-bottom: 2px solid rgba(200, 200, 200, 0);
+}
+
+nav.nav-all > ul.all > li.active-nav {
   border-bottom: 2px solid #fff;
 }
 
@@ -69,7 +67,14 @@ nav.nav-all > ul.all > li > a {
   text-decoration: none;
   color: #ffffff;
   font-weight: 400;
+  display: inline-block;
+  padding: 1.5rem 0;
   padding-right: 0.2rem;
+  transition: all 0.5s ease;
+}
+
+nav.nav-all > ul.all > li:hover {
+  border-bottom: 2px solid #fff;
 }
 
 nav.nav-all > ul.all > li > a > span {
@@ -112,6 +117,11 @@ aside .home-round {
   background: #ffffff;
   border-radius: 50%;
   position: relative;
+  cursor: pointer;
+}
+
+aside .home-round:hover {
+  background-color: -webkit-radial-gradient(center, white 70%, gray 10%);
 }
 
 .home-round p {
@@ -396,4 +406,141 @@ nav.crew-nav > ul > li > a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+/*STYLING FOR THE TECHNOLOGY PAGES*/
+
+body#tech-body {
+  background-image: url("../assets/technology/background-technology-desktop.jpg");
+  height: 100vh;
+  scroll-behavior: smooth;
+  overflow-y: hidden;
+}
+
+body#tech-body > main#tech-main {
+  height: 75vh;
+  width: 85vw;
+  padding-bottom: 2rem;
+  display: flex;
+  margin-right: 0rem;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+body#tech-body > main#tech-main > h1 {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 4.725px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+body#tech-body > main#tech-main > h1 > span {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 4.725px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+}
+
+body#tech-body > main#tech-main > section.tech-section {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+body#tech-body > main#tech-main > section.tech-section > div.space-img {
+  width: 35%;
+  order: 2;
+  height: 90%;
+}
+
+body#tech-body > main#tech-main > section.tech-section > div.space-img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+body#tech-body > main#tech-main > section.tech-section > div.space-info {
+  width: 50%;
+  height: 70vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.space-info > article {
+  width: 75%;
+  align-self: center;
+}
+
+nav.space-nav > ul > li {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #ffffff;
+  list-style: none;
+  position: relative;
+  margin-top: 2rem;
+}
+
+nav.space-nav > ul > li > a {
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 37px;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #0b0d17;
+  background: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.space-info > article > h3 {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  color: #d0d6f9;
+}
+
+div.space-info > article > h2 {
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 64px;
+  color: #ffffff;
+  padding: 1rem 0rem;
+}
+
+div.space-info > article > p {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #d0d6f9;
 }
