@@ -13,7 +13,7 @@ body {
 
 body#home-body {
   background-image: url("../assets/home/background-home-desktop.jpg");
-  height: 100vh;
+  /* height: 100vh; */
   scroll-behavior: smooth;
   overflow-y: hidden;
 }
@@ -57,7 +57,7 @@ nav.nav-all > ul.all {
 nav.nav-all > ul.all > li {
   list-style: none;
   border-bottom: 2px solid rgba(200, 200, 200, 0);
-  transition: all 1s ease;
+  transition: all 0.5s ease;
 }
 
 nav.nav-all > ul.all > li.active-nav {
@@ -154,7 +154,7 @@ aside .home-round:hover::before {
 
 body#destination-body {
   background-image: url("../assets/destination/background-destination-desktop.jpg");
-  height: 100vh;
+  /* height: 100vh; */
   scroll-behavior: smooth;
   overflow-y: hidden;
 }
@@ -230,8 +230,8 @@ nav.nav-destination > ul > li > a {
 }
 
 .hero-img {
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
 }
 
 .hero-img > img {
@@ -307,7 +307,7 @@ section.destination-section > article {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 32px;
+  line-height: 1.5rem;
   color: #d0d6f9;
 }
 
@@ -315,7 +315,7 @@ section.destination-section > article {
 
 body#crew-body {
   background-image: url("../assets/crew/background-crew-desktop.jpg");
-  height: 100vh;
+  /* height: 100vh; */
   scroll-behavior: smooth;
   overflow-y: hidden;
 }
@@ -448,7 +448,7 @@ nav.crew-nav > ul > li > a:hover {
 
 body#tech-body {
   background-image: url("../assets/technology/background-technology-desktop.jpg");
-  height: 100vh;
+  /* height: 100vh; */
   scroll-behavior: smooth;
   overflow-y: hidden;
 }
@@ -560,7 +560,7 @@ nav.space-nav > ul > li > a {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 1s ease;
+  transition: all 0.5s ease;
 }
 
 div.space-info > article > h3 {
@@ -590,4 +590,220 @@ div.space-info > article > p {
   font-size: 18px;
   line-height: 32px;
   color: #d0d6f9;
+}
+
+/* STYLING FOR TABLET VERSION */
+
+@media screen and (min-width: 380px) and (max-width: 800px) {
+  body#home-body {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    overflow-y: scroll;
+    flex-flow: column nowrap;
+    background-image: url("../assets/home/background-home-tablet.jpg");
+  }
+
+  header {
+    margin: 0;
+    margin-left: auto;
+    width: 95vw;
+  }
+
+  div.horizontal-line {
+    display: none;
+  }
+
+  main.home-main {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  nav.nav-all {
+    width: 70%;
+    align-self: flex-start;
+  }
+
+  nav.nav-all > ul.all > li {
+    height: 100%;
+  }
+
+  nav.nav-all > ul.all {
+    padding: 0rem 3rem;
+    height: 100%;
+  }
+
+  nav.nav-all > ul.all > li > a {
+    font-family: "Barlow Condensed";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 2rem 0;
+    line-height: 17px;
+    letter-spacing: 2.3625px;
+    color: #ffffff;
+  }
+
+  nav.nav-all > ul.all > li > a > span {
+    display: none;
+  }
+
+  main.home-main {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+  }
+
+  section.home-section {
+    width: 80%;
+    padding: 5rem 0;
+  }
+
+  section.home-section > h2 {
+    font-family: "Barlow Condensed";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 3.375px;
+    color: #d0d6f9;
+  }
+
+  section.home-section > h1 {
+    font-family: "Bellefair";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8rem;
+    text-align: center;
+    line-height: 1.5;
+    color: #ffffff;
+  }
+
+  section.home-section > p {
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #d0d6f9;
+  }
+
+  main.home-main > aside {
+    padding-bottom: 5rem;
+    text-align: center;
+  }
+
+  /* TABLET VERSION STYLING FOR DESTINATION PAGES */
+
+  body#destination-body {
+    background-image: url("../assets/destination/background-destination-tablet.jpg");
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+  }
+
+  main#destination-main > h1 {
+    font-family: "Barlow Condensed";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3.375px;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 2rem 0;
+  }
+
+  main#destination-main > h1 > span {
+    font-family: "Barlow Condensed";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3.375px;
+    color: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+  }
+
+  aside.destination-aside {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-img {
+    width: 300px;
+    height: 300px;
+  }
+
+  section.destination-section {
+    width: 90%;
+  }
+
+  nav.nav-destination {
+    width: 50%;
+    margin: 2rem auto;
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  section.destination-section > h1 {
+    font-family: "Bellefair";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6rem;
+    line-height: 1;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  section.destination-section > article {
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: center;
+    color: #d0d6f9;
+  }
+
+  .footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 2rem 0;
+    border-top: 1px solid #383b4b;
+  }
+
+  div.footer > div.distance-section > div.distance-header > p,
+  div.footer > div.time-section > div.time-header {
+    font-family: "Barlow Condensed";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 2.3625px;
+    text-transform: uppercase;
+    color: #d0d6f9;
+  }
+
+  div.footer > div.distance-section > div.distance-value > p,
+  div.footer > div.time-section > div.time-value {
+    font-family: "Bellefair";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
 }
