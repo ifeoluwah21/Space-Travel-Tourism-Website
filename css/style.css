@@ -57,6 +57,7 @@ nav.nav-all > ul.all {
 nav.nav-all > ul.all > li {
   list-style: none;
   border-bottom: 2px solid rgba(200, 200, 200, 0);
+  transition: all 1s ease;
 }
 
 nav.nav-all > ul.all > li.active-nav {
@@ -70,11 +71,11 @@ nav.nav-all > ul.all > li > a {
   display: inline-block;
   padding: 1.5rem 0;
   padding-right: 0.2rem;
-  transition: all 0.5s ease;
 }
 
 nav.nav-all > ul.all > li:hover {
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  mix-blend-mode: normal;
 }
 
 nav.nav-all > ul.all > li > a > span {
@@ -112,16 +113,32 @@ section.home-section > p {
 }
 
 aside .home-round {
-  width: 274px;
-  height: 274px;
+  width: 200px;
+  height: 200px;
   background: #ffffff;
   border-radius: 50%;
   position: relative;
   cursor: pointer;
+  z-index: 3;
 }
 
-aside .home-round:hover {
-  background-color: -webkit-radial-gradient(center, white 70%, gray 10%);
+aside .home-round::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  z-index: -2;
+  transition: all 0.5s ease;
+}
+
+aside .home-round:hover::before {
+  background: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.1;
+  transform: scale(1.5);
 }
 
 .home-round p {
@@ -188,8 +205,17 @@ nav.nav-destination > ul {
 }
 
 nav.nav-destination > ul > li {
-  height: 70%;
-  padding: 0.5rem 0;
+  list-style: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
+  transition: all 1s ease;
+}
+
+nav.nav-destination > ul > li:hover {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  mix-blend-mode: normal;
+}
+
+nav.nav-destination > ul > li.active-nav {
   list-style: none;
   border-bottom: 2px solid #fff;
 }
@@ -198,13 +224,14 @@ nav.nav-destination > ul > li > a {
   text-decoration: none;
   color: #ffffff;
   font-weight: 400;
-  padding-right: 0.2rem;
+  display: inline-block;
   font-family: "Barlow Condensed", sans-serif;
+  padding: 0.5rem 0rem;
 }
 
 .hero-img {
-  width: 427px;
-  height: 427px;
+  width: 400px;
+  height: 400px;
 }
 
 .hero-img > img {
@@ -294,7 +321,6 @@ body#crew-body {
 }
 
 main#crew-main {
-  height: calc(100vh - 15vh);
   height: calc(100vh - 15vh);
   display: flex;
   width: 75%;
@@ -386,10 +412,9 @@ nav.crew-nav > ul {
 
 nav.crew-nav > ul > li {
   list-style: none;
-  width: 13px;
-  height: 13px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
-  background: white;
   position: relative;
   margin: 0rem 0.5rem;
 }
@@ -406,6 +431,17 @@ nav.crew-nav > ul > li > a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+nav.crew-nav > ul > li > a.active-crew-nav {
+  background: #ffffff;
+  opacity: 1;
+}
+
+nav.crew-nav > ul > li > a:hover {
+  background: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.5;
 }
 
 /*STYLING FOR THE TECHNOLOGY PAGES*/
@@ -486,10 +522,19 @@ nav.space-nav > ul > li {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background: #ffffff;
   list-style: none;
   position: relative;
   margin-top: 2rem;
+}
+
+nav.space-nav > ul > li > a.active-tech-nav {
+  background: #ffffff;
+  color: #0b0d17;
+}
+
+nav.space-nav > ul > li > a:hover {
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
 }
 
 nav.space-nav > ul > li > a {
@@ -500,13 +545,14 @@ nav.space-nav > ul > li > a {
   font-family: "Bellefair";
   font-style: normal;
   font-weight: 400;
-  font-size: 32px;
+  font-size: 30px;
   line-height: 37px;
   text-align: center;
   letter-spacing: 2px;
-  color: #0b0d17;
-  background: #ffffff;
+  color: #ffffff;
   position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-sizing: border-box;
   top: 50%;
   left: 50%;
   text-align: center;
@@ -514,6 +560,7 @@ nav.space-nav > ul > li > a {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 1s ease;
 }
 
 div.space-info > article > h3 {
