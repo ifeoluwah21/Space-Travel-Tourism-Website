@@ -13,9 +13,12 @@ body {
 
 body#home-body {
   background-image: url("../assets/home/background-home-desktop.jpg");
-  /* height: 100vh; */
   scroll-behavior: smooth;
   overflow-y: hidden;
+}
+
+div.hamburger {
+  display: none;
 }
 
 header {
@@ -315,13 +318,13 @@ section.destination-section > article {
 
 body#crew-body {
   background-image: url("../assets/crew/background-crew-desktop.jpg");
-  /* height: 100vh; */
+  height: min-content;
   scroll-behavior: smooth;
-  overflow-y: hidden;
+  overflow-y: scroll;
 }
 
 main#crew-main {
-  height: calc(100vh - 15vh);
+  height: max-content;
   display: flex;
   width: 75%;
   justify-content: space-between;
@@ -329,7 +332,7 @@ main#crew-main {
 }
 
 main#crew-main > div.crew-img {
-  height: 100%;
+  align-self: flex-end;
   width: 40%;
   padding-top: 2rem;
 }
@@ -344,8 +347,7 @@ section.crew-info-section {
   width: 45%;
 }
 
-#crew-main > .crew-info-section > h1 {
-  margin-bottom: 4rem;
+#crew-body > h1 {
   font-family: "Barlow Condensed";
   font-style: normal;
   font-weight: 400;
@@ -354,9 +356,11 @@ section.crew-info-section {
   letter-spacing: 4.725px;
   text-transform: uppercase;
   color: #ffffff;
+  width: 75%;
+  margin: 2rem auto;
 }
 
-#crew-main > .crew-info-section > h1 > span {
+#crew-body > h1 > span {
   font-family: "Barlow Condensed";
   font-style: normal;
   font-weight: 700;
@@ -389,10 +393,6 @@ section.crew-info-section {
   text-transform: uppercase;
   color: #ffffff;
   padding: 1.5rem 0rem;
-}
-
-#crew-main > .crew-info-section > article > h2.long-text {
-  font-size: 2.5rem;
 }
 
 #crew-main > .crew-info-section > article > p {
@@ -594,14 +594,16 @@ div.space-info > article > p {
 
 /* STYLING FOR TABLET VERSION */
 
-@media screen and (min-width: 380px) and (max-width: 1000px) {
+@media screen and (min-width: 450px) and (max-width: 1000px) {
   body#home-body {
     min-height: 100vh;
     width: 100vw;
     display: flex;
     overflow-y: scroll;
+    background-size: auto;
     flex-flow: column nowrap;
-    background-image: url("../assets/home/background-home-tablet.jpg");
+    overflow-x: hidden;
+    background-image: url(../assets/home/background-home-tablet.jpg);
   }
 
   header {
@@ -612,13 +614,6 @@ div.space-info > article > p {
 
   div.horizontal-line {
     display: none;
-  }
-
-  main.home-main {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: space-between;
   }
 
   nav.nav-all {
@@ -656,6 +651,8 @@ div.space-info > article > p {
     align-items: center;
     justify-content: space-between;
     min-height: 100vh;
+    margin: 0;
+    width: 100%;
   }
 
   section.home-section {
@@ -829,7 +826,7 @@ div.space-info > article > p {
     flex-flow: column nowrap;
   }
 
-  #crew-main > .crew-info-section > h1 {
+  #crew-body > h1 {
     font-family: "Barlow Condensed";
     font-style: normal;
     font-weight: 400;
@@ -838,10 +835,11 @@ div.space-info > article > p {
     letter-spacing: 3.375px;
     text-transform: uppercase;
     color: #ffffff;
-    margin: 2rem 0;
+    width: 93vw;
+    margin: 2rem 0 2rem auto;
   }
 
-  #crew-main > .crew-info-section > h1 > span {
+  #crew-body > h1 > span {
     font-family: "Barlow Condensed";
     font-style: normal;
     font-weight: 700;
@@ -908,5 +906,485 @@ div.space-info > article > p {
     height: 100%;
     width: 50%;
     padding-top: 1rem;
+    align-self: center;
+  }
+
+  /* TABLET STYLE FOR TECH PAGE */
+
+  body#tech-body {
+    background-image: url("../assets/technology/background-technology-tablet.jpg");
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+  body#tech-body > main#tech-main {
+    width: 100vw;
+  }
+
+  body#tech-body > main#tech-main > h1 {
+    font-family: "Barlow Condensed";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3.375px;
+    text-transform: uppercase;
+    padding: 2rem 0;
+    color: #ffffff;
+  }
+
+  body#tech-body > main#tech-main > h1 > span {
+    font-family: "Barlow Condensed";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3.375px;
+    color: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    padding-left: 2rem;
+  }
+
+  body#tech-body > main#tech-main > section.tech-section {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+  }
+
+  body#tech-body > main#tech-main > section.tech-section > div.space-info {
+    order: 2;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    height: max-content;
+  }
+
+  body#tech-body > main#tech-main > section.tech-section > div.space-img {
+    width: 100%;
+    order: 1;
+    height: auto;
+  }
+
+  nav.space-nav {
+    width: 220px;
+  }
+
+  nav.space-nav > ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  div.space-info > article {
+    width: 75%;
+    align-self: center;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 2rem 0;
+  }
+
+  div.space-info > article > h3 {
+    font-family: "Barlow Condensed";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    color: #d0d6f9;
+  }
+
+  div.space-info > article > h2 {
+    font-family: "Bellefair";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 46px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  div.space-info > article > p {
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #d0d6f9;
+  }
+}
+
+/* MOBILE VERSION STYLING */
+
+@media screen and (max-width: 450px) {
+  /* MOBILE VERSION STYING FOR HOME PAGE */
+  body#home-body {
+    background-image: url(../assets/home/background-home-mobile.jpg);
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100vh;
+    max-width: 90vw;
+    margin: 0 auto;
+  }
+
+  header {
+    width: 100%;
+    height: 80px;
+    margin: 0;
+    padding: 0.5rem 0;
+  }
+
+  .logo {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    align-self: center;
+  }
+
+  div.hamburger {
+    display: block;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    align-self: center;
+    z-index: 10;
+  }
+
+  div.horizontal-line {
+    display: none;
+  }
+
+  body > header > nav.nav-all {
+    display: none;
+  }
+
+  body > header > nav.nav-all.toggle {
+    display: flex;
+    position: absolute;
+    width: 75%;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    bottom: 0;
+    right: 0;
+    z-index: 8;
+    padding-top: 5rem;
+    justify-content: center;
+    margin-left: auto;
+  }
+
+  nav.nav-all > ul.all {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    height: min-content;
+    width: 100%;
+    padding: 0;
+    margin-left: 25px;
+  }
+  div.hamburger {
+    display: block;
+  }
+
+  nav.nav-all > ul.all > li {
+    border-bottom: none !important;
+    width: 100%;
+  }
+
+  nav.nav-all > ul.all > li > a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 400;
+    display: inline-block;
+    padding: 0.5rem 0;
+    width: 100%;
+    margin: 0.5rem 0;
+    transition: all 0.5s ease-in-out;
+  }
+
+  nav.nav-all > ul.all > li.active-nav > a {
+    border-right: 4px solid #fff;
+  }
+  nav.nav-all > ul.all > li > a:hover {
+    border-right: 4px solid rgba(255, 255, 255, 0.5);
+  }
+
+  main {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 75vh;
+    margin: 2rem 0;
+  }
+
+  section.home-section {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  section.home-section > h2 {
+    font-family: "Barlow Condensed";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 2.7px;
+    color: #d0d6f9;
+  }
+
+  section.home-section > h1 {
+    font-family: "Bellefair";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 100px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  section.home-section > p {
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #d0d6f9;
+  }
+
+  aside .home-round {
+    width: 150px;
+    height: 150px;
+  }
+
+  aside > .home-round > p {
+    font-family: "Bellefair";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 1.25px;
+    color: #0b0d17;
+  }
+
+  /* MOBILE VERSION STYLING FOR DESTINATION PAGES */
+  body#destination-body {
+    background-image: url(../assets/destination/background-destination-mobile.jpg);
+    height: max-content;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+  }
+
+  aside.destination-aside {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    justify-content: center;
+  }
+
+  main#destination-main {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    margin: 1rem 0;
+  }
+
+  section.destination-section {
+    width: 100%;
+  }
+
+  nav.nav-destination {
+    width: 70%;
+    background-color: rgba(255, 255, 255, 0);
+    margin: 0 auto;
+  }
+
+  .footer {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #383b4b;
+    align-items: center;
+    width: 90%;
+  }
+
+  .hero-img {
+    width: 170px;
+    height: 170px;
+    align-self: center;
+    margin: 2rem auto;
+  }
+
+  main#destination-main > h1 {
+    font-family: "Barlow Condensed";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: 0;
+  }
+
+  main#destination-main > h1 > span {
+    font-family: "Barlow Condensed";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    color: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+  }
+
+  section.destination-section > h1 {
+    font-family: "Bellefair";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 64px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  section.destination-section > article {
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #d0d6f9;
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .time-section > .time-header > p,
+  .distance-section > .distance-header > p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 2.3625px;
+    text-transform: uppercase;
+    color: #d0d6f9;
+  }
+
+  .distance-section > .distance-value > p,
+  .time-section > .time-value > p {
+    font-family: "Bellefair";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  .distance-section,
+  .time-section {
+    margin-bottom: 2rem;
+  }
+
+  .time-section {
+    margin-left: 0;
+  }
+
+  /* MOBILE VERSION STYLING FOR CREW PAGES */
+
+  body#crew-body {
+    background-image: url(../assets/crew/background-crew-mobile.jpg);
+    height: max-content;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+  }
+
+  main#crew-main {
+    height: fit-content;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+  }
+
+  section.crew-info-section {
+    width: 90%;
+    order: 2;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  #crew-body > h1 {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: 2rem auto 0;
+    text-align: center;
+  }
+
+  #crew-body > h1 > span {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    color: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+  }
+
+  #crew-main > .crew-info-section > article > h3 {
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+  }
+
+  #crew-main > .crew-info-section > article > h2 {
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+  }
+
+  nav.crew-nav {
+    order: 1;
+  }
+
+  nav.crew-nav > ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav.crew-nav > ul > li {
+    width: 10px;
+    height: 10px;
+  }
+
+  main#crew-main > div.crew-img {
+    align-self: center;
+    width: 60%;
+    margin: 1rem 0;
+    order: 1;
+  }
+
+  main#crew-main > section.crew-info-section > article {
+    display: flex;
+    flex-flow: column nowrap;
+    order: 2;
   }
 }
