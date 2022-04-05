@@ -15,6 +15,7 @@ body#home-body {
   background-image: url("../assets/home/background-home-desktop.jpg");
   scroll-behavior: smooth;
   overflow-y: hidden;
+  height:max-content;
 }
 
 div.hamburger {
@@ -157,7 +158,7 @@ aside .home-round:hover::before {
 
 body#destination-body {
   background-image: url("../assets/destination/background-destination-desktop.jpg");
-  /* height: 100vh; */
+  height: 100vh;
   scroll-behavior: smooth;
   overflow-y: hidden;
 }
@@ -600,7 +601,7 @@ div.space-info > article > p {
     width: 100vw;
     display: flex;
     overflow-y: scroll;
-    background-size: auto;
+    background-size: cover;
     flex-flow: column nowrap;
     overflow-x: hidden;
     background-image: url(../assets/home/background-home-tablet.jpg);
@@ -618,7 +619,6 @@ div.space-info > article > p {
 
   nav.nav-all {
     width: 70%;
-    align-self: flex-start;
   }
 
   nav.nav-all > ul.all > li {
@@ -702,6 +702,7 @@ div.space-info > article > p {
     background-image: url("../assets/destination/background-destination-tablet.jpg");
     overflow-y: scroll;
     scroll-behavior: smooth;
+    height: 100vh;
   }
 
   main#destination-main > h1 {
