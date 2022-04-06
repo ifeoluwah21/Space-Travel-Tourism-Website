@@ -14,6 +14,8 @@ body {
 body#home-body {
   background-image: url("../assets/home/background-home-desktop.jpg");
   scroll-behavior: smooth;
+  -moz-scroll-behavior: smooth;
+  -webkit-scroll-behavior: smooth;
   overflow-y: hidden;
   height: max-content;
 }
@@ -49,6 +51,7 @@ nav.nav-all {
   width: 60%;
   background-color: rgba(255, 255, 255, 0.04);
   backdrop-filter: blur(81.5485px);
+  -webkit-backdrop-filter: blur(81.5485px);
 }
 
 nav.nav-all > ul.all {
@@ -160,6 +163,8 @@ body#destination-body {
   background-image: url("../assets/destination/background-destination-desktop.jpg");
   height: 100vh;
   scroll-behavior: smooth;
+  -webkit-scroll-behavior: smooth;
+  -moz-scroll-behavior: smooth;
   overflow-y: hidden;
 }
 
@@ -321,6 +326,8 @@ body#crew-body {
   background-image: url("../assets/crew/background-crew-desktop.jpg");
   height: min-content;
   scroll-behavior: smooth;
+  -webkit-scroll-behavior: smooth;
+  -moz-scroll-behavior: smooth;
   overflow-y: scroll;
 }
 
@@ -449,8 +456,9 @@ nav.crew-nav > ul > li > a:hover {
 
 body#tech-body {
   background-image: url("../assets/technology/background-technology-desktop.jpg");
-  /* height: 100vh; */
   scroll-behavior: smooth;
+  -webkit-scroll-behavior: smooth;
+  -moz-scroll-behavior: smooth;
   overflow-y: hidden;
 }
 
@@ -702,6 +710,8 @@ div.space-info > article > p {
     background-image: url("../assets/destination/background-destination-tablet.jpg");
     overflow-y: scroll;
     scroll-behavior: smooth;
+    -webkit-scroll-behavior: smooth;
+    -moz-scroll-behavior: smooth;
     height: 100vh;
   }
 
@@ -810,6 +820,8 @@ div.space-info > article > p {
     background-image: url("../assets/crew/background-crew-tablet.jpg");
     overflow-y: scroll;
     scroll-behavior: smooth;
+    -webkit-scroll-behavior: smooth;
+    -moz-scroll-behavior: smooth;
   }
 
   main#crew-main {
@@ -916,6 +928,8 @@ div.space-info > article > p {
     background-image: url("../assets/technology/background-technology-tablet.jpg");
     overflow-y: scroll;
     scroll-behavior: smooth;
+    -webkit-scroll-behavior: smooth;
+    -moz-scroll-behavior: smooth;
     overflow-x: hidden;
   }
 
@@ -1026,6 +1040,8 @@ div.space-info > article > p {
   body#home-body {
     background-image: url(../assets/home/background-home-mobile.jpg);
     scroll-behavior: smooth;
+    -moz-scroll-behavior: smooth;
+    -webkit-scroll-behavior: smooth;
     overflow-y: scroll;
     overflow-x: hidden;
     height: 100vh;
@@ -1182,6 +1198,8 @@ div.space-info > article > p {
     background-image: url(../assets/destination/background-destination-mobile.jpg);
     height: max-content;
     scroll-behavior: smooth;
+    -webkit-scroll-behavior: smooth;
+    -moz-scroll-behavior: smooth;
     overflow-y: scroll;
   }
 
@@ -1312,6 +1330,8 @@ div.space-info > article > p {
     background-image: url(../assets/crew/background-crew-mobile.jpg);
     height: max-content;
     scroll-behavior: smooth;
+    -webkit-scroll-behavior: smooth;
+    -moz-scroll-behavior: smooth;
     overflow-y: scroll;
   }
 
@@ -1397,6 +1417,8 @@ div.space-info > article > p {
     min-height: 100vh;
     width: 100vw;
     scroll-behavior: smooth;
+    -webkit-scroll-behavior: smooth;
+    -moz-scroll-behavior: smooth;
     overflow-y: scroll;
   }
 
