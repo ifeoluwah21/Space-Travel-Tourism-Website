@@ -11,10 +11,7 @@ This is a solution to the [Space tourism website challenge on Frontend Mentor](h
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -28,7 +25,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](<./assets/Screenshot%20(102).png.jpg>)
 
 ### Links
 
@@ -43,7 +40,6 @@ Users should be able to:
 - Media Queries
 - Flexbox
 - JavaScript
-  **Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
@@ -51,6 +47,5 @@ Users should be able to:
 
 ## Author
 
-- Website - [Ifeoluwa Oludare]
 - Frontend Mentor - [@Ifeoluwah21](https://www.frontendmentor.io/profile/ifeoluwah21)
 - Twitter - [@\_ifeoluwaaa](https://www.twitter.com/_ifeoluwaaa_)
