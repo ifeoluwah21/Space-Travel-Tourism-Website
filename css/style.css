@@ -50,8 +50,9 @@ div.horizontal-line {
 nav.nav-all {
   width: 60%;
   background-color: rgba(255, 255, 255, 0.04);
-  backdrop-filter: blur(81.5485px);
+  -moz-backdrop-filter: blur(81.5485px);
   -webkit-backdrop-filter: blur(81.5485px);
+  backdrop-filter: blur(81.5485px);
 }
 
 nav.nav-all > ul.all {
@@ -162,9 +163,9 @@ aside .home-round:hover::before {
 body#destination-body {
   background-image: url("../assets/destination/background-destination-desktop.jpg");
   height: 100vh;
-  scroll-behavior: smooth;
   -webkit-scroll-behavior: smooth;
   -moz-scroll-behavior: smooth;
+  scroll-behavior: smooth;
   overflow-y: hidden;
 }
 
@@ -325,9 +326,9 @@ section.destination-section > article {
 body#crew-body {
   background-image: url("../assets/crew/background-crew-desktop.jpg");
   height: min-content;
-  scroll-behavior: smooth;
   -webkit-scroll-behavior: smooth;
   -moz-scroll-behavior: smooth;
+  scroll-behavior: smooth;
   overflow-y: scroll;
 }
 
@@ -456,9 +457,9 @@ nav.crew-nav > ul > li > a:hover {
 
 body#tech-body {
   background-image: url("../assets/technology/background-technology-desktop.jpg");
-  scroll-behavior: smooth;
   -webkit-scroll-behavior: smooth;
   -moz-scroll-behavior: smooth;
+  scroll-behavior: smooth;
   overflow-y: hidden;
 }
 
@@ -709,9 +710,9 @@ div.space-info > article > p {
   body#destination-body {
     background-image: url("../assets/destination/background-destination-tablet.jpg");
     overflow-y: scroll;
-    scroll-behavior: smooth;
     -webkit-scroll-behavior: smooth;
     -moz-scroll-behavior: smooth;
+    scroll-behavior: smooth;
     height: 100vh;
   }
 
@@ -819,9 +820,9 @@ div.space-info > article > p {
   body#crew-body {
     background-image: url("../assets/crew/background-crew-tablet.jpg");
     overflow-y: scroll;
-    scroll-behavior: smooth;
     -webkit-scroll-behavior: smooth;
     -moz-scroll-behavior: smooth;
+    scroll-behavior: smooth;
   }
 
   main#crew-main {
@@ -927,9 +928,9 @@ div.space-info > article > p {
   body#tech-body {
     background-image: url("../assets/technology/background-technology-tablet.jpg");
     overflow-y: scroll;
-    scroll-behavior: smooth;
     -webkit-scroll-behavior: smooth;
     -moz-scroll-behavior: smooth;
+    scroll-behavior: smooth;
     overflow-x: hidden;
   }
 
@@ -1039,13 +1040,12 @@ div.space-info > article > p {
   /* MOBILE VERSION STYING FOR HOME PAGE */
   body#home-body {
     background-image: url(../assets/home/background-home-mobile.jpg);
-    scroll-behavior: smooth;
     -moz-scroll-behavior: smooth;
     -webkit-scroll-behavior: smooth;
+    scroll-behavior: smooth;
     overflow-y: scroll;
     overflow-x: hidden;
     height: 100vh;
-    max-width: 90vw;
     margin: 0 auto;
   }
 
@@ -1064,12 +1064,22 @@ div.space-info > article > p {
   }
 
   div.hamburger {
-    display: block;
     width: 35px;
     height: 35px;
+    display: fixed;
+    right: 0px;
     text-align: center;
     align-self: center;
     z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  div.hamburger > img {
+    cursor: pointer;
+    width: 24px;
+    height: 21px;
   }
 
   div.horizontal-line {
@@ -1077,12 +1087,8 @@ div.space-info > article > p {
   }
 
   body > header > nav.nav-all {
-    display: none;
-  }
-
-  body > header > nav.nav-all.toggle {
     display: flex;
-    position: absolute;
+    position: fixed;
     width: 75%;
     top: 0;
     left: 0;
@@ -1093,6 +1099,12 @@ div.space-info > article > p {
     padding-top: 5rem;
     justify-content: center;
     margin-left: auto;
+    margin-right: -100%;
+    transition: all 1s ease;
+  }
+
+  body > header > nav.nav-all.toggle {
+    margin-right: 0;
   }
 
   nav.nav-all > ul.all {
@@ -1103,9 +1115,6 @@ div.space-info > article > p {
     width: 100%;
     padding: 0;
     margin-left: 25px;
-  }
-  div.hamburger {
-    display: block;
   }
 
   nav.nav-all > ul.all > li {
@@ -1197,10 +1206,11 @@ div.space-info > article > p {
   body#destination-body {
     background-image: url(../assets/destination/background-destination-mobile.jpg);
     height: max-content;
-    scroll-behavior: smooth;
     -webkit-scroll-behavior: smooth;
     -moz-scroll-behavior: smooth;
+    scroll-behavior: smooth;
     overflow-y: scroll;
+    overflow-x: hidden;
   }
 
   aside.destination-aside {
@@ -1216,7 +1226,6 @@ div.space-info > article > p {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: fit-content;
     margin: 1rem 0;
   }
 
@@ -1329,14 +1338,14 @@ div.space-info > article > p {
   body#crew-body {
     background-image: url(../assets/crew/background-crew-mobile.jpg);
     height: max-content;
-    scroll-behavior: smooth;
     -webkit-scroll-behavior: smooth;
     -moz-scroll-behavior: smooth;
+    scroll-behavior: smooth;
     overflow-y: scroll;
+    overflow-x: hidden;
   }
 
   main#crew-main {
-    height: fit-content;
     display: flex;
     flex-flow: column nowrap;
     width: 100%;
@@ -1383,6 +1392,10 @@ div.space-info > article > p {
     text-align: center;
   }
 
+  #crew-main > .crew-info-section > article > p {
+    text-align: center;
+  }
+
   nav.crew-nav {
     order: 1;
   }
@@ -1415,11 +1428,11 @@ div.space-info > article > p {
   body#tech-body {
     background-image: url(../assets/technology/background-technology-mobile.jpg);
     min-height: 100vh;
-    width: 100vw;
-    scroll-behavior: smooth;
     -webkit-scroll-behavior: smooth;
     -moz-scroll-behavior: smooth;
+    scroll-behavior: smooth;
     overflow-y: scroll;
+    overflow-x: hidden;
   }
 
   body#tech-body > main#tech-main > section.tech-section {
