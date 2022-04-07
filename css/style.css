@@ -17,7 +17,7 @@ body#home-body {
   -moz-scroll-behavior: smooth;
   -webkit-scroll-behavior: smooth;
   overflow-y: hidden;
-  height: max-content;
+  min-height: 100vh;
 }
 
 div.hamburger {
@@ -96,7 +96,6 @@ main {
   justify-content: space-between;
   align-items: flex-end;
   width: 75vw;
-  height: 60vh;
   margin: 0 auto;
 }
 
@@ -703,6 +702,7 @@ div.space-info > article > p {
   main.home-main > aside {
     padding-bottom: 5rem;
     text-align: center;
+    justify-self: flex-start;
   }
 
   /* TABLET VERSION STYLING FOR DESTINATION PAGES */
@@ -823,6 +823,7 @@ div.space-info > article > p {
     -webkit-scroll-behavior: smooth;
     -moz-scroll-behavior: smooth;
     scroll-behavior: smooth;
+    min-height: 100vh;
   }
 
   main#crew-main {
@@ -921,6 +922,7 @@ div.space-info > article > p {
     width: 50%;
     padding-top: 1rem;
     align-self: center;
+    justify-self: flex-end;
   }
 
   /* TABLET STYLE FOR TECH PAGE */
@@ -932,6 +934,7 @@ div.space-info > article > p {
     -moz-scroll-behavior: smooth;
     scroll-behavior: smooth;
     overflow-x: hidden;
+    min-height: 100vh;
   }
 
   body#tech-body > main#tech-main {
