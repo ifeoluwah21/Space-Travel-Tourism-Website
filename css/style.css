@@ -7,12 +7,12 @@
 body {
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: "Barlow Condensed", sans-serif;
+  font-family: 'Barlow Condensed', sans-serif;
   color: #ffffff;
 }
 
 body#home-body {
-  background-image: url("../assets/home/background-home-desktop.jpg");
+  background-image: url('../assets/home/background-home-desktop.jpg');
   scroll-behavior: smooth;
   -moz-scroll-behavior: smooth;
   -webkit-scroll-behavior: smooth;
@@ -110,7 +110,7 @@ section.home-section > h2 {
 
 section.home-section > h1 {
   font-size: 7rem;
-  font-family: "Bellefair", serif;
+  font-family: 'Bellefair', serif;
   font-weight: 400;
 }
 
@@ -133,7 +133,7 @@ aside .home-round::before {
   position: absolute;
   top: 0;
   left: 0;
-  content: "";
+  content: '';
   height: 100%;
   width: 100%;
   border-radius: 50%;
@@ -160,7 +160,7 @@ aside .home-round:hover::before {
 /*STYLING FOR DESTINATION PAGE*/
 
 body#destination-body {
-  background-image: url("../assets/destination/background-destination-desktop.jpg");
+  background-image: url('../assets/destination/background-destination-desktop.jpg');
   height: 100vh;
   -webkit-scroll-behavior: smooth;
   -moz-scroll-behavior: smooth;
@@ -180,7 +180,7 @@ main#destination-main {
 
 main#destination-main > h1 {
   margin-bottom: 3rem;
-  font-family: "Barlow Condensed";
+  font-family: 'Barlow Condensed';
   font-style: normal;
   font-weight: 400;
   font-size: 28px;
@@ -191,7 +191,7 @@ main#destination-main > h1 {
 }
 
 main#destination-main > h1 > span {
-  font-family: "Barlow Condensed";
+  font-family: 'Barlow Condensed';
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
@@ -234,7 +234,7 @@ nav.nav-destination > ul > li > a {
   color: #ffffff;
   font-weight: 400;
   display: inline-block;
-  font-family: "Barlow Condensed", sans-serif;
+  font-family: 'Barlow Condensed', sans-serif;
   padding: 0.5rem 0rem;
 }
 
@@ -276,7 +276,7 @@ aside.destination-aside {
 
 .time-section > .time-header > p,
 .distance-section > .distance-header > p {
-  font-family: "Barlow Condensed";
+  font-family: 'Barlow Condensed';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -289,7 +289,7 @@ aside.destination-aside {
 
 .distance-section > .distance-value > p,
 .time-section > .time-value > p {
-  font-family: "Bellefair";
+  font-family: 'Bellefair';
   font-style: normal;
   font-weight: 400;
   font-size: 28px;
@@ -306,13 +306,13 @@ section.destination-section {
 section.destination-section > h1 {
   font-size: 6rem;
   margin: 1rem 0;
-  font-family: "Bellefair", serif;
+  font-family: 'Bellefair', serif;
   font-weight: 400;
 }
 
 section.destination-section > article {
   text-align: justify;
-  font-family: "Barlow";
+  font-family: 'Barlow';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -323,7 +323,7 @@ section.destination-section > article {
 /*STYLING FOR THE CREW PAGES*/
 
 body#crew-body {
-  background-image: url("../assets/crew/background-crew-desktop.jpg");
+  background-image: url('../assets/crew/background-crew-desktop.jpg');
   height: min-content;
   -webkit-scroll-behavior: smooth;
   -moz-scroll-behavior: smooth;
@@ -356,7 +356,7 @@ section.crew-info-section {
 }
 
 #crew-body > h1 {
-  font-family: "Barlow Condensed";
+  font-family: 'Barlow Condensed';
   font-style: normal;
   font-weight: 400;
   font-size: 28px;
@@ -369,7 +369,7 @@ section.crew-info-section {
 }
 
 #crew-body > h1 > span {
-  font-family: "Barlow Condensed";
+  font-family: 'Barlow Condensed';
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
@@ -381,7 +381,7 @@ section.crew-info-section {
 }
 
 #crew-main > .crew-info-section > article > h3 {
-  font-family: "Bellefair";
+  font-family: 'Bellefair';
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
@@ -393,7 +393,7 @@ section.crew-info-section {
 }
 
 #crew-main > .crew-info-section > article > h2 {
-  font-family: "Bellefair";
+  font-family: 'Bellefair';
   font-style: normal;
   font-weight: 400;
   font-size: 3rem;
@@ -404,7 +404,7 @@ section.crew-info-section {
 }
 
 #crew-main > .crew-info-section > article > p {
-  font-family: "Barlow";
+  font-family: 'Barlow';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -455,7 +455,7 @@ nav.crew-nav > ul > li > a:hover {
 /*STYLING FOR THE TECHNOLOGY PAGES*/
 
 body#tech-body {
-  background-image: url("../assets/technology/background-technology-desktop.jpg");
+  background-image: url('../assets/technology/background-technology-desktop.jpg');
   -webkit-scroll-behavior: smooth;
   -moz-scroll-behavior: smooth;
   scroll-behavior: smooth;
@@ -474,7 +474,7 @@ body#tech-body > main#tech-main {
 }
 
 body#tech-body > main#tech-main > h1 {
-  font-family: "Barlow Condensed";
+  font-family: 'Barlow Condensed';
   font-style: normal;
   font-weight: 400;
   font-size: 28px;
@@ -485,7 +485,7 @@ body#tech-body > main#tech-main > h1 {
 }
 
 body#tech-body > main#tech-main > h1 > span {
-  font-family: "Barlow Condensed";
+  font-family: 'Barlow Condensed';
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
@@ -551,7 +551,7 @@ nav.space-nav > ul > li > a {
   height: 100%;
   width: 100%;
   border-radius: 50%;
-  font-family: "Bellefair";
+  font-family: 'Bellefair';
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
@@ -573,7 +573,7 @@ nav.space-nav > ul > li > a {
 }
 
 div.space-info > article > h3 {
-  font-family: "Barlow Condensed";
+  font-family: 'Barlow Condensed';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -583,7 +583,7 @@ div.space-info > article > h3 {
 }
 
 div.space-info > article > h2 {
-  font-family: "Bellefair";
+  font-family: 'Bellefair';
   font-style: normal;
   font-weight: 400;
   font-size: 3rem;
@@ -593,7 +593,7 @@ div.space-info > article > h2 {
 }
 
 div.space-info > article > p {
-  font-family: "Barlow";
+  font-family: 'Barlow';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -639,7 +639,7 @@ div.space-info > article > p {
   }
 
   nav.nav-all > ul.all > li > a {
-    font-family: "Barlow Condensed";
+    font-family: 'Barlow Condensed';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -669,7 +669,7 @@ div.space-info > article > p {
   }
 
   section.home-section > h2 {
-    font-family: "Barlow Condensed";
+    font-family: 'Barlow Condensed';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -680,7 +680,7 @@ div.space-info > article > p {
   }
 
   section.home-section > h1 {
-    font-family: "Bellefair";
+    font-family: 'Bellefair';
     font-style: normal;
     font-weight: 400;
     font-size: 8rem;
@@ -690,7 +690,7 @@ div.space-info > article > p {
   }
 
   section.home-section > p {
-    font-family: "Barlow";
+    font-family: 'Barlow';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -708,7 +708,7 @@ div.space-info > article > p {
   /* TABLET VERSION STYLING FOR DESTINATION PAGES */
 
   body#destination-body {
-    background-image: url("../assets/destination/background-destination-tablet.jpg");
+    background-image: url('../assets/destination/background-destination-tablet.jpg');
     overflow-y: scroll;
     -webkit-scroll-behavior: smooth;
     -moz-scroll-behavior: smooth;
@@ -717,7 +717,7 @@ div.space-info > article > p {
   }
 
   main#destination-main > h1 {
-    font-family: "Barlow Condensed";
+    font-family: 'Barlow Condensed';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -729,7 +729,7 @@ div.space-info > article > p {
   }
 
   main#destination-main > h1 > span {
-    font-family: "Barlow Condensed";
+    font-family: 'Barlow Condensed';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -764,7 +764,7 @@ div.space-info > article > p {
   }
 
   section.destination-section > h1 {
-    font-family: "Bellefair";
+    font-family: 'Bellefair';
     font-style: normal;
     font-weight: 400;
     font-size: 6rem;
@@ -774,7 +774,7 @@ div.space-info > article > p {
   }
 
   section.destination-section > article {
-    font-family: "Barlow";
+    font-family: 'Barlow';
     font-style: normal;
     font-weight: 400;
     font-size: 1rem;
@@ -793,7 +793,7 @@ div.space-info > article > p {
 
   div.footer > div.distance-section > div.distance-header > p,
   div.footer > div.time-section > div.time-header {
-    font-family: "Barlow Condensed";
+    font-family: 'Barlow Condensed';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -806,7 +806,7 @@ div.space-info > article > p {
 
   div.footer > div.distance-section > div.distance-value > p,
   div.footer > div.time-section > div.time-value {
-    font-family: "Bellefair";
+    font-family: 'Bellefair';
     font-style: normal;
     font-weight: 400;
     font-size: 28px;
@@ -818,7 +818,7 @@ div.space-info > article > p {
 
   /* TABLET VERSION STYLING FOR THE CREW PAGES */
   body#crew-body {
-    background-image: url("../assets/crew/background-crew-tablet.jpg");
+    background-image: url('../assets/crew/background-crew-tablet.jpg');
     overflow-y: scroll;
     -webkit-scroll-behavior: smooth;
     -moz-scroll-behavior: smooth;
@@ -842,7 +842,7 @@ div.space-info > article > p {
   }
 
   #crew-body > h1 {
-    font-family: "Barlow Condensed";
+    font-family: 'Barlow Condensed';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -855,7 +855,7 @@ div.space-info > article > p {
   }
 
   #crew-body > h1 > span {
-    font-family: "Barlow Condensed";
+    font-family: 'Barlow Condensed';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -873,7 +873,7 @@ div.space-info > article > p {
   }
 
   #crew-main > .crew-info-section > article > h3 {
-    font-family: "Bellefair";
+    font-family: 'Bellefair';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -886,7 +886,7 @@ div.space-info > article > p {
   }
 
   #crew-main > .crew-info-section > article > h2 {
-    font-family: "Bellefair";
+    font-family: 'Bellefair';
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
@@ -898,7 +898,7 @@ div.space-info > article > p {
   }
 
   #crew-main > .crew-info-section > article > p {
-    font-family: "Barlow";
+    font-family: 'Barlow';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -928,7 +928,7 @@ div.space-info > article > p {
   /* TABLET STYLE FOR TECH PAGE */
 
   body#tech-body {
-    background-image: url("../assets/technology/background-technology-tablet.jpg");
+    background-image: url('../assets/technology/background-technology-tablet.jpg');
     overflow-y: scroll;
     -webkit-scroll-behavior: smooth;
     -moz-scroll-behavior: smooth;
@@ -943,7 +943,7 @@ div.space-info > article > p {
   }
 
   body#tech-body > main#tech-main > h1 {
-    font-family: "Barlow Condensed";
+    font-family: 'Barlow Condensed';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -955,7 +955,7 @@ div.space-info > article > p {
   }
 
   body#tech-body > main#tech-main > h1 > span {
-    font-family: "Barlow Condensed";
+    font-family: 'Barlow Condensed';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -1006,7 +1006,7 @@ div.space-info > article > p {
   }
 
   div.space-info > article > h3 {
-    font-family: "Barlow Condensed";
+    font-family: 'Barlow Condensed';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -1016,7 +1016,7 @@ div.space-info > article > p {
   }
 
   div.space-info > article > h2 {
-    font-family: "Bellefair";
+    font-family: 'Bellefair';
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
@@ -1027,7 +1027,7 @@ div.space-info > article > p {
   }
 
   div.space-info > article > p {
-    font-family: "Barlow";
+    font-family: 'Barlow';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -1062,6 +1062,7 @@ div.space-info > article > p {
   .logo {
     width: 60px;
     height: 60px;
+    margin-top: 1.25rem;
     text-align: center;
     align-self: center;
   }
@@ -1159,7 +1160,7 @@ div.space-info > article > p {
   }
 
   section.home-section > h2 {
-    font-family: "Barlow Condensed";
+    font-family: 'Barlow Condensed';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -1170,7 +1171,7 @@ div.space-info > article > p {
   }
 
   section.home-section > h1 {
-    font-family: "Bellefair";
+    font-family: 'Bellefair';
     font-style: normal;
     font-weight: 400;
     font-size: 80px;
@@ -1180,7 +1181,7 @@ div.space-info > article > p {
   }
 
   section.home-section > p {
-    font-family: "Barlow";
+    font-family: 'Barlow';
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -1195,7 +1196,7 @@ div.space-info > article > p {
   }
 
   aside > .home-round > p {
-    font-family: "Bellefair";
+    font-family: 'Bellefair';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -1262,7 +1263,7 @@ div.space-info > article > p {
   }
 
   main#destination-main > h1 {
-    font-family: "Barlow Condensed";
+    font-family: 'Barlow Condensed';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -1274,7 +1275,7 @@ div.space-info > article > p {
   }
 
   main#destination-main > h1 > span {
-    font-family: "Barlow Condensed";
+    font-family: 'Barlow Condensed';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -1286,7 +1287,7 @@ div.space-info > article > p {
   }
 
   section.destination-section > h1 {
-    font-family: "Bellefair";
+    font-family: 'Bellefair';
     font-style: normal;
     font-weight: 400;
     font-size: 56px;
@@ -1317,7 +1318,7 @@ div.space-info > article > p {
 
   .distance-section > .distance-value > p,
   .time-section > .time-value > p {
-    font-family: "Bellefair";
+    font-family: 'Bellefair';
     font-style: normal;
     font-weight: 400;
     font-size: 28px;
@@ -1456,7 +1457,7 @@ div.space-info > article > p {
   }
 
   body#tech-body > main#tech-main > h1 {
-    font-family: "Barlow Condensed";
+    font-family: 'Barlow Condensed';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -1468,7 +1469,7 @@ div.space-info > article > p {
   }
 
   body#tech-body > main#tech-main > h1 > span {
-    font-family: "Barlow Condensed";
+    font-family: 'Barlow Condensed';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -1480,7 +1481,7 @@ div.space-info > article > p {
   }
 
   div.space-info > article > h3 {
-    font-family: "Barlow Condensed";
+    font-family: 'Barlow Condensed';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -1491,7 +1492,7 @@ div.space-info > article > p {
   }
 
   div.space-info > article > h2 {
-    font-family: "Bellefair";
+    font-family: 'Bellefair';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -1502,7 +1503,7 @@ div.space-info > article > p {
   }
 
   div.space-info > article > p {
-    font-family: "Barlow";
+    font-family: 'Barlow';
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
