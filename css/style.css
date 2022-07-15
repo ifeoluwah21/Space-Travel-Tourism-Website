@@ -9,6 +9,7 @@ body {
   background-size: cover;
   font-family: 'Barlow Condensed', sans-serif;
   color: #ffffff;
+  min-height: 100%;
 }
 
 body#home-body {
@@ -16,8 +17,8 @@ body#home-body {
   scroll-behavior: smooth;
   -moz-scroll-behavior: smooth;
   -webkit-scroll-behavior: smooth;
-  overflow-y: hidden;
-  min-height: 100vh;
+ /* overflow-y: hidden;*/
+  min-height: 100%;
 }
 
 div.hamburger {
